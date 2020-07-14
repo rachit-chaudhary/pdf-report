@@ -1,0 +1,118 @@
+body {
+    font-family: 'Open Sans', sans-serif;
+    background: rgb(204,204,204); 
+  }
+  page {
+    background: white;
+    display: block;
+    margin: 0 auto;
+    margin-bottom: 0.5cm;
+    box-shadow: 0 0 0.5cm rgba(0,0,0,0.5);
+  }
+  page[size="A4"] {  
+    width: 21cm;
+    height: 29.7cm; 
+  }
+  @media print {
+    body, page {
+      margin: 0;
+      box-shadow: 0;
+    }
+  }
+
+/* Header Style */
+header{
+  padding: 20px;
+  background-color: #c8e8d2;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+header div.info-row{
+  margin: 5px 0px;
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+}
+header div.info-row img{
+  margin: 0px 5px;
+}
+header div.info-row h5{
+  margin: 0px 5px;
+}
+header div.info-row p{
+  margin: 0px 5px;
+  font-size: 13px;
+}
+
+/* Container */
+div.container{
+  width: 760px;
+  margin: 0px auto;
+}
+
+/* Detail Box */
+div.row{
+  margin: 35px auto;
+  width: 587px;
+}
+div.row div.heading{
+  display: flex;
+  justify-content: space-between;
+}
+div.row div.heading h4{
+  margin: 2px 0px;
+}
+div.row div.detail-box{
+  display: flex;
+  width: 100%;
+  border: 1px solid;
+}
+div.row div.detail-box table.left, div.row div.detail-box   table.center{
+  border-right: 1px solid #000000;
+}
+div.row div.detail-box table{
+  width: 50%;
+  padding: 5px;
+}
+div.row div.detail-box table tr td b{
+    margin-right: 7px;
+}
+
+/* Autentication */
+div.row div.autentication{
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+}
+div.row div.autentication div.signature{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+div.row div.autentication div.signature div h4{
+  margin: 0px;
+}
+div.row div.autentication div.signature div p{
+  float: left;
+  font-size: 12px;
+  margin-top: 5px;
+  color: #666666;
+}
+div.row div.autentication div.signature img{
+  margin: 5px 0px;
+}
+div.row div.autentication div.date div h4{
+  margin: 0px;
+}
+
+/* Footer */
+footer{
+  background-color: #c8e8d2;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+footer div p{
+  font-size: 10px;
+}
